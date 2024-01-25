@@ -2,6 +2,8 @@ package com.clever.boot.controller;
 
 import com.clever.boot.dto.PersonCreateRequestDto;
 import com.clever.boot.dto.PersonResponseDto;
+import com.clever.boot.entity.HouseHistoryEntity;
+import com.clever.boot.service.HouseHistoryService;
 import com.clever.boot.service.PersonService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
