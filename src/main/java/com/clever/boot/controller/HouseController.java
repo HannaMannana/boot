@@ -3,6 +3,8 @@ package com.clever.boot.controller;
 
 import com.clever.boot.dto.HouseCreateRequestDto;
 import com.clever.boot.dto.HouseResponseDto;
+import com.clever.boot.entity.HouseHistoryEntity;
+import com.clever.boot.service.HouseHistoryService;
 import com.clever.boot.service.HouseService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
