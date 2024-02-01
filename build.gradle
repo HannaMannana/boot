@@ -37,16 +37,17 @@ dependencies {
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 
 	runtimeOnly 'org.postgresql:postgresql'
+	testImplementation 'org.testcontainers:postgresql'
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
 
 	annotationProcessor 'org.projectlombok:lombok'
 	annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.3.Final'
-
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	implementation 'com.fasterxml.jackson.core:jackson-databind:2.14.2'
 }
 
-tasks.named('test') {
+test {
 	useJUnitPlatform()
 }
