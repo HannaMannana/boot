@@ -1,0 +1,12 @@
+databaseChangeLog:
+  - changeSet:
+      id: init
+      author: Mikhaliova
+      changes:
+        - sqlFile:
+            dbms: postgresql
+            encoding: utf8
+            path: init.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            stripComments: true
